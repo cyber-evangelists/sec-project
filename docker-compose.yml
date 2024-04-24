@@ -3,9 +3,6 @@ services:
   kali:
     build:
       context: .
-    container_name: kali_searchsploit
+      dockerfile: Dockerfile
+    container_name: kali_container
     tty: true
-    stdin_open: true
-    volumes:
-      - ./exploits:/root/exploits  # Mount local directory to container for sharing exploits
-    command: /bin/bash
