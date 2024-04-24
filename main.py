@@ -89,6 +89,7 @@ def run_command_in_container(container_name, command):
 
 def exploit_by_ip(filename,ip):
     try:
+        # Add the proper termnial view here: --> ">>" @anas
         subprocess.run(['python3', filename, ip], check=True)
         input_cmd=input('Enter input:>>')
         subprocess.run(input_cmd, check=True)
