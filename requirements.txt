@@ -1,0 +1,6 @@
+beautifulsoup4
+subprocess
+tabulate
+nmap
+python-decouple
+docker
