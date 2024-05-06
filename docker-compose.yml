@@ -1,8 +1,0 @@
-version: '3'
-services:
-  kali:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: kali_container
-    tty: true
