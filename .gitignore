@@ -2,3 +2,7 @@
 __pycache__
 Scan.cpython-39.pyc
 remove.cpython-39.pyc
+Dockerfile
+docker-compose.yml
+newReport.html
+post_exploitation.sh
