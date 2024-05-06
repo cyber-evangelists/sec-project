@@ -45,7 +45,7 @@ def scan(ip: str, start_port: int = 1, end_port: int = 1024):
                 })
         product_versions = ", ".join(port["product_version"] for port in filtered_ports)
     except:
-        print("Ip Address is not online")
+        print("Nmap scan could not be perfomred")
         return False
     if(product_versions):
         container_name = container_Name
@@ -92,7 +92,6 @@ def exploit_by_ip(filename,ip):
         # Add the proper termnial view here: --> ">>" @anas
         subprocess.run(['python3', filename, ip], check=True)
         input_cmd=input('Enter input:>>')
-        subprocess.run(input_cmd, check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error: {e}")
     
@@ -107,16 +106,17 @@ def extract_py_files(output,ip):
 
 def get_file(filename,ip):
    
-     container_name = container_Name
-     half_command = 'searchsploit -m'
-     full_command = f"{half_command} {filename}"
-     print('Getting ',filename, ' in local system for exploitation')
-     output = run_command_in_container(container_name, full_command)
-     print(output)
-     container_id = container_ID
-     container_path = f"/usr/share/exploitdb/exploits/unix/remote/{filename}"
-     host_path = host_Path
-     docker_cp(container_id,container_path, host_path)
+#      container_name = container_Name
+   
+#      half_command = 'searchsploit -m'
+#      full_command = f"{half_command} {filename}"
+#      print('Getting ',filename, ' in local system for exploitation')
+#      output = run_command_in_container(container_name, full_command)
+#      print(output)
+#      container_id = container_ID
+#      container_path = f"/usr/share/exploitdb/exploits/unix/remote/{filename}"
+#      host_path = host_Path
+#      docker_cp(container_id,container_path, host_path)
      exploit=exploit_by_ip(filename,ip)
      print(exploit)
 
