@@ -8,13 +8,13 @@ def remove_from_html(html_file):
 
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    # Remove all image tags
+   
     for img_tag in soup.find_all('img'):
         img_tag.extract()
 
     modified_html = soup.prettify()
 
-    # Remove all occurrences of the keywords
+   
     modified_html = re.sub(r'\b[zZ][aA][pP]\b', '', modified_html)
 
     with open(html_file, 'w') as file:

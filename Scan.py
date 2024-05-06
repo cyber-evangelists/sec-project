@@ -1,8 +1,9 @@
 import subprocess
 import os
 from remove import remove_from_html
+# from removeone import remove_tags
 
-def run_scan(report_file="newReport.html"):
+def run_scan(report_file="Report.html"):
     
     
    
@@ -28,6 +29,8 @@ def run_scan(report_file="newReport.html"):
     try:
         subprocess.run(command, check=True)
         remove_from_html('Report.html')
+        # remove_tags('Report.html')
+        
         print('The report of these vulnerabilities has been created in the folder')
     except subprocess.CalledProcessError as e:
         pass

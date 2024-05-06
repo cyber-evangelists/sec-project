@@ -7,7 +7,8 @@ def main_menu():
     print("\nMenu:")
     print("1. Network Analysis")
     print("2. Vulnerability Analysis")
-    print("3. Exit")
+    print("3. Password Security Analysis")
+    print("4. Exit")
 
 def network_analysis_menu():
     print("\nNetwork Discovery Menu:")
@@ -21,6 +22,11 @@ def vulnerability_analysis_menu():
     print("1. Vulnerability Scanner")
     print("2. Advance Scan")
     print("3. Back to Main Menu")
+    
+def password_security_menu():
+    print("1.  Brute Force Attack Resistance Tests")
+    print("2.  Back to Main Menu")
+    
 
 
 def main():
@@ -53,6 +59,16 @@ def main():
                 else:
                     print("-> Invalid choice. Please choose again.")
         elif choice == '3':
+            while True:
+                password_security_menu()
+                sub_choice = input("-> Enter your choice: ")
+                if sub_choice == '1':
+                    pass
+                elif sub_choice == '2':
+                    break
+                else:
+                    print("-> Invalid choice. Please choose again.")
+        elif choice == '4':
             print("Exiting [+]")
             break
         else:
