@@ -1,5 +1,6 @@
-fastapi
-uvicorn
-python-nmap
+beautifulsoup4
+subprocess
+tabulate
+nmap
+python-decouple
 docker
-python-dotenv
